@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color:  rgb(95, 95, 172);
+    padding: 10px;
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+img {
+    border-radius: 50%;
+    width:8%;
+    height: 60px;
+}
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.toggledown {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+li > a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    background-color: aliceblue;
+    padding: 50px;
+}
+.form{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    /* color: white; */
+}
+input {
+    width: 80%;
+    padding: 20px;
+    border: 2px solid rgb(185, 178, 178);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.submit {
+    width: 10%;
+    padding: 10px;
+    margin: auto;
+    background-color: blue;
+    color:  white;
+}
+.submit:hover{
+    background-color: black;
+}
+.submit::after {
+    background-color: crimson;
+}
+.Error {
+    font-style: italic;
+    color: crimson;
+    font-size: small;
+  
+}
+.handles {
+    color: rgb(23, 3, 77);
+    font-size: small;
+    font-style: italic;
+}
+footer {
+    background-color: rgb(240, 209, 169);
+    padding: 40px;
+    
+}
+
+.footer_paragraph {
+    font-weight: bolder;
+}
+.copyright {
+    margin-left: 45%;
+    margin-top: 30px;
+    color: rgb(86, 86, 238);
+
+}
+footer > div {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+}
+.contact-socials {
+    margin-left: 25%;
+}
+.socials {
+    width:30px;
+    height: 30px;
+}
+h4 {
+    margin-bottom: 20px;
+    color:grey;
+}
+
+@media (max-width: 480px) {
+   
+    .hamburger {
+        display: flex;
+        position: relative;
+        left: 25rem;
+        bottom: 2rem;
+    }
+    header > div {
+        flex-direction: column;
+        align-items: start;
+    }
+    header > div > div > nav  {
+        display:  none;
+        margin-top: -5px;
+    }
+    li {
+        display: block;
+        margin-top: 10px;
+    }
+    .submit {
+        width: 30%;
+    padding: 10px;
+    margin: auto;
+    background-color: blue;
+    color:  white;
+    }
+    .form {
+        width: 90%;
+    }
+    .copyright {
+        margin-left: 35%;
+    
+    }
+    footer > div {
+        display: flex;
+        /* justify-content: space-evenly; */
+        margin-top: 20px;
+    }
+    .contact-socials {
+        margin-left: 20%;
+    }
+    .socials {
+        width:20px;
+        height: 20px;
+    }
+    h4 {
+        margin-bottom: 20px;
+        color:grey;
+       
+    }
+}

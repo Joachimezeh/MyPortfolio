@@ -1,0 +1,499 @@
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --Moderate-cyan: hsl(176, 50%, 47%);
+    --Dark-cyan: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-gray: hsl(0, 0%, 48%);
+    --white: rgb(255,255,255);
+}
+body{
+    background-color:  whitesmoke;
+    /* position: relative; */
+}
+header > img {
+    width: 100px;
+    height: 20px;
+    margin-left: 10%;
+
+}
+header {
+    color: white;
+    /* padding: 0 ; */
+    background-image: url(./images/image-hero-desktop.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-between ;
+}
+.header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    margin-right: 10%;
+}
+/* header > h1 {
+    margin-left: 10%;
+    position: absolute;
+    top: 10%; */
+
+/* } */
+/* nav {
+     position: absolute;
+    left: 80%; 
+     top: 8%; 
+    
+} */
+li {
+    display: inline;
+    margin-right: 0.5rem;
+    
+}
+p {
+    color: hsl(0, 0%, 48%);
+    font-weight: 400;
+}
+span {
+    color: hsl(0, 0%, 0%);
+    text-align: left;
+    /* width: 50px;
+    height: 50px; */
+}
+/* section {
+    border: hsl(0, 0%, 48%);
+    border-style: solid;
+    border-width: 1px;
+} */
+    
+
+.section1{
+    padding: 1rem 2rem;
+    /* text-align: center; */
+    /* position: absolute;
+    left: 30%; */
+    /* top: 350px;  */
+    background-color: var(--white);
+    width: 50%;
+    margin: -6rem auto 1rem auto;
+    border: hsl(0, 0%, 48%);
+    /* border-width: 30px; */
+    border-radius: 10px;
+    /* height: 180px; */
+
+}
+.section1 > img {
+    margin-left: 45%;
+    margin-top: -2.5rem;
+}
+.section1 > h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-weight: 900;
+    font-size:large;
+}
+.section1 > p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.section1 > .bookmark-container {
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.section1 > .bookmark-container > p {
+    background: var(--Moderate-cyan);
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: var(--white);
+}
+.section1 > .bookmark-container > div {
+    display: flex;
+    align-items: center;
+
+}
+.bookmark-image {
+    position: relative;
+    left: 30px;
+    height: 6vh;
+}
+.section1 > .bookmark-container > div > p {
+    background: rgb(248, 244, 244);
+    border-radius: 20px;
+    padding: 15px 15px 15px 40px;
+    font-weight: 700;
+    color:var(--Dark-gray);
+}
+
+
+.section2 {
+   background-color: white;
+   width: 50%;
+   margin: auto;
+   padding: 20px;
+   border-radius: 10px;
+   /*display: flex;
+   justify-content:space-between;
+   text-align: left; */
+}
+.section2 > div {
+   display: flex;
+   justify-content:space-between;
+   text-align: left;
+   margin-right: 3rem;
+}
+
+/* .section2 > div {
+    display: inline;
+    float: left;
+    margin: 10px 9% 40px;
+    text-align: center;
+} */
+span {
+    font-size: larger;
+    font-weight: 900;
+
+}
+.section2 > .div-hr {
+    display: flex;
+    justify-content: left;
+    height: 10px;
+    width: 95%;
+    background: rgb(248, 244, 244);
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+.section2 > .div-hr > .second {
+    height: 10px;
+    width: 80%;
+    background: var(--Moderate-cyan);
+    border-radius: 10px;
+}
+.section3 {
+    /* background: white;
+    position: absolute;
+    left: 30%;
+    top: 680px; */
+    width: 50%;
+    padding: 2rem;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 10px;
+
+}
+.section3 > h3 {
+    margin-bottom: 30px;
+}
+.section3 > p {
+    padding-bottom: 2rem;
+}
+.section3 > div {
+    border: rgb(214, 209, 209);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.section3 > div > h1 {
+    float: left ;
+    font-weight: 700;
+}
+.section3 > div > .pledge {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.section3 > .first-div > .pledge > p {
+    color: var(--Moderate-cyan);
+}
+.section3 > .first-div > .section3-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.section3 > div > .section3-button > button {
+    padding: 0.5rem 1rem;
+    background-color: var(--Moderate-cyan);
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+.last-div > {
+    /* color: whitesmoke; */
+    opacity: 0.4;
+}
+
+
+
+.last-header {
+    opacity: 0.4;
+}
+.last-paragraph {
+    opacity: 0.4;
+}
+.last-button {
+    opacity: 0.4;
+}
+@media (max-width: 480px) {
+    header {
+        color: white;
+        /* padding: 0 ; */
+        background-image: url(./images/image-hero-mobile.jpg);
+        height: 80vh;
+        /* background-repeat: no-repeat; */
+        background-size: contain;
+        padding: 2rem 0.5rem 0 0.5rem;
+        display: flex;
+        justify-content: space-between ;
+        
+    }
+    /* header > img {
+        width: 100%;
+        height: 20px;
+        margin-left: 10%;
+    
+    } */
+    .section1{
+    padding: 1rem 2rem;
+    /* text-align: center; */
+    /* position: absolute;
+    left: 30%; */
+    /* top: 350px;  */
+    background-color: var(--white);
+    width: 80%;
+    margin: -11rem auto 1rem auto;
+    border: hsl(0, 0%, 48%);
+    /* border-width: 30px; */
+    border-radius: 10px;
+    /* height: 180px; */
+}
+header > img {
+    width: 100px;
+    height: 20px;
+    margin-left: 5%;
+
+}
+.section1 > img {
+    margin-left: 40%;
+    margin-top: -2.5rem;
+}
+nav {
+    margin-right: 0%;
+    margin-left: 5%;
+}
+/* header > h1 {
+    margin-left: 10%;
+    position: absolute;
+    top: 10%; */
+
+/* } */
+/* nav {
+     position: absolute;
+    left: 80%; 
+     top: 8%; 
+    
+} */
+li {
+    display: inline;
+    margin-right: 0.5rem;
+    
+}
+p {
+    color: hsl(0, 0%, 48%);
+    font-weight: 400;
+}
+span {
+    color: hsl(0, 0%, 0%);
+    text-align: left;
+    /* width: 50px;
+    height: 50px; */
+}
+/* section {
+    border: hsl(0, 0%, 48%);
+    border-style: solid;
+    border-width: 1px;
+} */
+    
+.section1 > h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-weight: 900;
+    font-size:large;
+}
+.section1 > p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.section1 > .bookmark-container {
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+.section1 > .bookmark-container > p {
+    background: var(--Moderate-cyan);
+    border-radius: 25px;
+    padding: 20px 40px;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 0.8rem;
+}
+.section1 > .bookmark-container > div {
+    display: flex;
+    align-items: center;
+
+
+}
+.bookmark-image {
+    position: relative;
+    left: 1rem;
+    height: 10vh;
+}
+.section1 > .bookmark-container > div > p {
+    background: rgb(248, 244, 244);
+    border-radius: 20px;
+    padding: 0;
+    font-size: 0;
+    /* padding: 15px 15px 15px 40px;
+    font-weight: 700; */
+    color:var(--Dark-gray);
+    height: 0;
+    width: 0;
+}
+
+
+.section2 {
+   background-color: white;
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+   border-radius: 10px;
+   /*display: flex;
+   justify-content:space-between;
+   text-align: left; */
+}
+.section2 > div {
+   display: block;
+   /* justify-content:space-between; */
+   text-align: center;
+   margin:10px 0;
+   /* margin-right: 3rem; */
+}
+.section2 > div > p {
+    margin: 20px 0;
+}
+hr {
+    width: 30%;
+    margin: auto;
+}
+
+/* .section2 > div {
+    display: inline;
+    float: left;
+    margin: 10px 9% 40px;
+    text-align: center;
+} */
+span {
+    font-size: larger;
+    font-weight: 900;
+
+}
+.section2 > .div-hr {
+    display: flex;
+    justify-content: left;
+    height: 10px;
+    width: 95%;
+    background: rgb(248, 244, 244);
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+.section2 > .div-hr > .second {
+    height: 10px;
+    width: 80%;
+    background: var(--Moderate-cyan);
+    border-radius: 10px;
+}
+.section3 {
+    /* background: white;
+    position: absolute;
+    left: 30%;
+    top: 680px; */
+    width: 80%;
+    padding: 2rem;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 10px;
+
+}
+.section3 > h3 {
+    margin-bottom: 30px;
+}
+.section3 > p {
+    padding-bottom: 2rem;
+}
+.section3 > div {
+    border: rgb(214, 209, 209);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.section3 > div > h1 {
+    float: left ;
+    font-weight: 700;
+}
+.section3 > div > .pledge {
+    display: block;
+    /* justify-content: space-between; */
+    margin-bottom: 2rem;
+}
+.section3 > .first-div > .pledge > p {
+    color: var(--Moderate-cyan);
+    margin-top: 1rem;
+}
+.section3 > .first-div > .section3-button {
+    display: block;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 1rem;
+}
+.section3 > div > .section3-button > button {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background-color: var(--Moderate-cyan);
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+.last-div > {
+    /* color: whitesmoke; */
+    opacity: 0.4;
+}
+
+
+
+.last-header {
+    opacity: 0.4;
+}
+.last-paragraph {
+    opacity: 0.4;
+}
+.last-button {
+    opacity: 0.4;
+}
+}

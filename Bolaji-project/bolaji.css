@@ -1,0 +1,25 @@
+span {
+    color: rgb(179, 174, 174);
+}
+input {
+    background-color: rgb(218, 213, 213);
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+    padding:15px;
+    border: 0;
+    border-radius: 10px;
+}
+button {
+    background-color: rgb(218, 213, 213);
+    width: 40%;
+    height: 40px;
+    margin: 20px;
+    padding:15px;
+    border: 0;
+    border-radius: 10px;
+}
+p {
+    text-align: center;
+    
+}
