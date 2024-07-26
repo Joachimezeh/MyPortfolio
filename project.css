@@ -9,10 +9,10 @@ body {
 }
 
 
-header {
+/* header {
     position: sticky;
     top: 0;
-}
+} */
 .header {
     background-color: rgb(95, 95, 172);
     padding: 10px;
@@ -24,7 +24,7 @@ header {
 
 .logo {
     border-radius: 50%;
-    width:8%;
+    width:200%;
     height: 60px;
 }
 .hamburger-2 {
@@ -43,12 +43,12 @@ header {
 li{
     list-style-type: none;
     display: inline;
-    margin-right: 1rem;
+    margin-right: 10px;
 }
 ul > li > a {
     text-decoration: none;
     color: white;
-    font-size: large;
+    /* font-size: large; */
 }
 ul > li > a:hover {
     background-color: grey;
@@ -73,6 +73,7 @@ ul > li > .button {
 .row {
     display: flex;
     justify-content: flex-start;
+    flex-direction:column;
     padding: 0 20px;
 }
 .first-paragraph {
@@ -86,7 +87,7 @@ h1{
     padding-bottom: 20px;
 }
 .description{
-    margin-top: 100px!important;
+    /* margin-top: 100px!important; */
     line-height: 30px;
 }
 .first-section > .row > .description > a {
@@ -98,9 +99,11 @@ h1{
     border-radius: 10px;
 }
 .my-image {
-    margin-top: -50px;
-    width: 100%;
-    height: 85vh;
+    /* margin-top: -50px; */
+    width: 30%;
+    height: 70vh;
+    margin-left: 70%;
+    margin-top: -113px;
 }
 #second-section {
     background-color: whitesmoke;
@@ -195,6 +198,9 @@ footer {
     color: rgb(86, 86, 238);
 
 }
+footer {
+    font-family: serif !important;
+}
 footer > div {
     display: flex;
     margin-top: 20px;
@@ -215,27 +221,31 @@ h4 {
 @media (max-width: 480px) {
     .logo {
         border-radius: 50%;
-        width:12%;
+        width:25%;
         height: 60px;
+    }
+    .header{
+        display: block;
     }
     .hamburger-2 {
         display: flex;
-        position: relative;
-        left: 25rem;
-        bottom: 2rem;
+        /* position: relative; */
+        /* left: 50%; */
+        /* left: 25rem; */
+        /* bottom: 2rem; */
     }
-    .header {
-        flex-direction: column;
-        align-items: start;
+    .header-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: column; */
+        /* align-items: end; */
+        /* justify-content: space-between; */
     }
-    .header > div {
-        flex-direction: column;
-        align-items: start;
-        
-    }
-    .header > div > nav  {
+    nav  {
         display:  none;
-       
+        /* margin-top: 7px; */
+        margin-left:-30px;
     }
     li {
         display: block;
@@ -243,8 +253,12 @@ h4 {
     }
    
     .my-image {
-        height: 330px;
-        margin-top: -70px;
+        /* margin-top: -50px; */
+        width: 80%;
+        /* height: 24.5rem; */
+        height: 60vh;
+        margin-left: 30%;
+        /* margin-top: -100px; */
     }
     .row {
         display: flex;
